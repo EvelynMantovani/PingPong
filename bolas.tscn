@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dons6ludmiqg3"]
+
+[ext_resource type="Texture2D" uid="uid://bc5tx2voggjd1" path="res://imagem/bolas.png" id="1_0527v"]
+[ext_resource type="Script" path="res://bolas.gd" id="2_uomry"]
+
+[node name="Bolas" type="Node2D"]
+script = ExtResource("2_uomry")
+
+[node name="Bolas" type="Sprite2D" parent="."]
+scale = Vector2(0.45, 0.463462)
+texture = ExtResource("1_0527v")

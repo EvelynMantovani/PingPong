@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1t2w6xv8ncec"]
+
+[ext_resource type="PackedScene" uid="uid://dons6ludmiqg3" path="res://bolas.tscn" id="2_oc367"]
+[ext_resource type="Texture2D" uid="uid://b7jxinpp220lj" path="res://imagem/NovaMesa.png" id="2_ppk8e"]
+
+[node name="Principal" type="Node2D"]
+position = Vector2(-6, -3)
+
+[node name="NovaMesa" type="Sprite2D" parent="."]
+position = Vector2(581.875, 326.625)
+scale = Vector2(0.99935, 0.952363)
+texture = ExtResource("2_ppk8e")
+
+[node name="Bolas" parent="." instance=ExtResource("2_oc367")]
+position = Vector2(489, 262)
+scale = Vector2(0.99935, 0.952363)
