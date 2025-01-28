@@ -1,9 +1,9 @@
 extends Node2D
 
 var velocy: int = 180
-var velocx: int = 10
+var velocx: int = 180
 var direy: int = 1
-var direx: int = 2
+var direx: int = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,11 +21,9 @@ func _process(delta: float) -> void:
 	print(position)
 
 
-	position.x = position.x + direx *velocy *delta
-	if position.x >= 644:
+	position.x = position.x + direx *velocx *delta
+	if position.x >= 1142:
 		direx = -direx
-		#position.y =640
-		
 	elif position.x <=10:
 		direx = -direx
 	print(position)

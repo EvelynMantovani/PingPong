@@ -12,5 +12,5 @@ scale = Vector2(0.99935, 0.952363)
 texture = ExtResource("2_ppk8e")
 
 [node name="Bolas" parent="." instance=ExtResource("2_oc367")]
-position = Vector2(489, 262)
+position = Vector2(1051, 257)
 scale = Vector2(0.99935, 0.952363)
