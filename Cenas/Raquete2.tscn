@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqf2b61mccgqt"]
+
+[ext_resource type="Texture2D" uid="uid://8eq16e255lem" path="res://Imagens/Raquete2.png" id="1_r0u6s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccy5c"]
+size = Vector2(252.399, 23.7549)
+
+[node name="Raquete2" type="Node2D"]
+
+[node name="Raquete2" type="Sprite2D" parent="."]
+position = Vector2(-0.0834258, 3.83768)
+rotation = 1.5708
+scale = Vector2(0.855777, 0.673545)
+texture = ExtResource("1_r0u6s")
+
+[node name="AreaRaquete2" type="Area2D" parent="Raquete2"]
+
+[node name="Collision2_2D" type="CollisionShape2D" parent="Raquete2/AreaRaquete2"]
+position = Vector2(0.188031, -0.123854)
+shape = SubResource("RectangleShape2D_ccy5c")

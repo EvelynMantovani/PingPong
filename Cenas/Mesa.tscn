@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://b0jer25g84loh"]
+
+[ext_resource type="Texture2D" uid="uid://bblax3oktpgin" path="res://Imagens/Mesa.png" id="1_3nj6v"]
+[ext_resource type="Script" path="res://Script/Mesa.tres.gd" id="1_fcrgh"]
+[ext_resource type="PackedScene" uid="uid://dqpl5iauhthlo" path="res://Cenas/Raquete1.tscn" id="2_m0ukn"]
+[ext_resource type="PackedScene" uid="uid://dqf2b61mccgqt" path="res://Cenas/Raquete2.tscn" id="3_2wcjr"]
+[ext_resource type="Script" path="res://Script/raquete_1.gd" id="4_31vvd"]
+[ext_resource type="PackedScene" uid="uid://d1qk83aff8mje" path="res://Cenas/Bolinha.tscn" id="4_mmiti"]
+[ext_resource type="Script" path="res://Script/raquete_2.gd" id="6_khp2i"]
+
+[node name="Principal" type="Node2D"]
+script = ExtResource("1_fcrgh")
+
+[node name="Mesa" type="Sprite2D" parent="."]
+position = Vector2(576.5, 324.999)
+scale = Vector2(1.08774, 1.10617)
+texture = ExtResource("1_3nj6v")
+
+[node name="Bolinha" parent="." instance=ExtResource("4_mmiti")]
+position = Vector2(576, 304)
+
+[node name="Raquete1_" parent="." instance=ExtResource("2_m0ukn")]
+position = Vector2(40, 104)
+script = ExtResource("4_31vvd")
+
+[node name="Raquete2_" parent="." instance=ExtResource("3_2wcjr")]
+position = Vector2(1112, 328)
+script = ExtResource("6_khp2i")
+
+[node name="Placar_PL1" type="Label" parent="."]
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 157.0
+offset_bottom = 64.0
+
+[node name="Placar_PL2" type="Label" parent="."]
+offset_left = 992.0
+offset_top = 24.0
+offset_right = 1120.0
+offset_bottom = 64.0
